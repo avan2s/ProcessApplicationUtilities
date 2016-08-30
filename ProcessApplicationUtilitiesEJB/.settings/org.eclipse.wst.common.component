@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="ProcessApplicationUtilitiesEJB">
+        <wb-resource deploy-path="/" source-path="/ejbModule" tag="defaultRootSource"/>
+        <dependent-module archiveName="camunda-engine-cdi-7.5.0.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/camunda/bpm/camunda-engine-cdi/7.5.0/camunda-engine-cdi-7.5.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="java-output-path" value="/ProcessApplicationUtilitiesEJB/build/classes"/>
+    </wb-module>
+</project-modules>

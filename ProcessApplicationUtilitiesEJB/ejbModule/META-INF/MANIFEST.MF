@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Dependencies: org.camunda.bpm.camunda-engine export
+Class-Path: lib/camunda-engine-cdi-7.5.0.jar
