@@ -19,6 +19,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="goalEndPeriod" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *         &lt;element name="goalFigure" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="goalStartPeriod" type="{http://www.w3.org/2001/XMLSchema}int"/>
+ *         &lt;element name="goalUnit" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="goalValue" type="{http://www.w3.org/2001/XMLSchema}double"/>
  *         &lt;element name="goalWeight" type="{http://www.w3.org/2001/XMLSchema}double"/>
  *       &lt;/sequence>
@@ -34,6 +35,7 @@ import javax.xml.bind.annotation.XmlType;
     "goalEndPeriod",
     "goalFigure",
     "goalStartPeriod",
+    "goalUnit",
     "goalValue",
     "goalWeight"
 })
@@ -42,6 +44,7 @@ public class GoalRequest {
     protected int goalEndPeriod;
     protected String goalFigure;
     protected int goalStartPeriod;
+    protected String goalUnit;
     protected double goalValue;
     protected double goalWeight;
 
@@ -99,6 +102,30 @@ public class GoalRequest {
      */
     public void setGoalStartPeriod(int value) {
         this.goalStartPeriod = value;
+    }
+
+    /**
+     * Ruft den Wert der goalUnit-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getGoalUnit() {
+        return goalUnit;
+    }
+
+    /**
+     * Legt den Wert der goalUnit-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setGoalUnit(String value) {
+        this.goalUnit = value;
     }
 
     /**

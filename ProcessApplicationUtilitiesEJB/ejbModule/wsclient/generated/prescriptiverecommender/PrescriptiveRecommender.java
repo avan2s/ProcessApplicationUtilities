@@ -37,10 +37,10 @@ public interface PrescriptiveRecommender {
      * @return
      *     returns wsclient.generated.prescriptiverecommender.SequenceRecommendation
      * @throws CalculationFailedException
-     * @throws ProcessInstanceNotSupportedException
      * @throws GoalNotSupportedException
      * @throws ProcessNotSupportedException
      * @throws ValueNotReadableException_Exception
+     * @throws ProcessInstanceNotSupportedException
      */
     @WebMethod
     @WebResult(name = "sequenceRecommendation", targetNamespace = "")
@@ -77,10 +77,10 @@ public interface PrescriptiveRecommender {
      * @return
      *     returns wsclient.generated.prescriptiverecommender.NextActionRecommendation
      * @throws CalculationFailedException
-     * @throws ProcessInstanceNotSupportedException
      * @throws GoalNotSupportedException
      * @throws ProcessNotSupportedException
      * @throws ValueNotReadableException_Exception
+     * @throws ProcessInstanceNotSupportedException
      */
     @WebMethod
     @WebResult(name = "nextActionRecommendation", targetNamespace = "")
@@ -111,9 +111,9 @@ public interface PrescriptiveRecommender {
      * @param refInstance
      * @return
      *     returns java.lang.String
-     * @throws ProcessInstanceNotSupportedException
      * @throws ProcessNotSupportedException
      * @throws TaskNotFoundException
+     * @throws ProcessInstanceNotSupportedException
      */
     @WebMethod
     @WebResult(name = "registerDecisionResponseMessage", targetNamespace = "")
